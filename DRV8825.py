@@ -47,7 +47,7 @@ class DRV8825():
                      '1/16step': (0, 0, 1),
                      '1/32step': (1, 0, 1)}
 
-        print("Control mode:",mode
+        print("Control mode:",mode)
         if (mode == ControlMode[1]):
             print("set pins")
             self.digital_write(self.mode_pins, microstep[stepformat])
