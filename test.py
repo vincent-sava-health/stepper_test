@@ -34,9 +34,9 @@ try:
     # '1/32step': A cycle = 2048 * 32 steps
     """
     Motor2.SetMicroStep('hardward' ,'halfstep')    
-    Motor2.TurnStep(Dir='forward', steps=2048, stepdelay=0.0002)
+    Motor2.TurnStep(Dir='forward', steps=200*32, stepdelay=0.002)
     time.sleep(0.5)
-    Motor2.TurnStep(Dir='backward', steps=2048, stepdelay=0.0002)
+    Motor2.TurnStep(Dir='backward', steps=200*32, stepdelay=0.002)
     Motor2.Stop()
     
 except:
