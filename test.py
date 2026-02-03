@@ -41,7 +41,7 @@ try:
     
 except:
     # GPIO.cleanup()
-    print "\nMotor stop"
+    print("Motor stop")
     # Motor1.Stop()
     Motor2.Stop()
     exit()
